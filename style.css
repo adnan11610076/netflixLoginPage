@@ -1,0 +1,362 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.main-container {
+    position: relative;
+    background: url("./loginPage_background_img.jpg");
+    width: 100vw;
+    min-height: 52rem;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+
+.main-container::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.first-container .navbar {
+    position: relative;
+    z-index: 2;
+    background: none !important;
+}
+
+.first-container .navbar .navbar-brand {
+    width: 12%;
+    height: auto;
+    margin-top: 0.5rem;
+    margin-left: 5rem;
+
+}
+
+.first-container .navbar .navbar-brand img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.second-container {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -46%);
+    background: rgb(0 0 0 / 77%);
+    color: #fff;
+    padding: 3rem 4rem 6rem 4rem;
+    border-radius: 5px;
+    z-index: 2;
+    width: 30rem;
+    height: 45rem;
+    /* border: 1px soid #fff; */
+}
+
+.second-container h2 {
+    font-size: 1.9rem;
+    font-weight: 600;
+    font-family: unset;
+}
+
+.second-container .form-control {
+    background: transparent !important;
+    border: none !important;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 0;
+}
+
+.second-container .form-control input {
+    background: none;
+    padding: 15px;
+    border: 1px solid #ffffff5c;
+    border-radius: 5px;
+    color: #fff;
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+.second-container .form-control input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.error {
+    font-family: unset;
+    font-size: 0.8125rem;
+    font-weight: 400;
+    color: rgb(235, 57, 66);
+}
+
+.error img {
+    width: 20px;
+}
+
+#emailError {
+    display: none;
+}
+
+#passwordError {
+    display: none;
+}
+
+.password-field {
+    position: relative;
+}
+
+.eyeIcon {
+    filter: invert(1);
+    width: 5%;
+    position: absolute;
+    top: 15px;
+    right: 16px;
+    display: none;
+}
+
+.eyeIcon img {
+    width: 100%;
+    height: 100%;
+}
+
+.eyeIcon:hover {
+    cursor: pointer;
+}
+
+.closeEye {
+    filter: invert(1);
+    width: 5%;
+    position: absolute;
+    top: 15px;
+    right: 16px;
+    display: none;
+}
+
+.closeEye img {
+    width: 100%;
+    height: 100%;
+}
+
+.closeEye:hover {
+    cursor: pointer;
+}
+
+.password-field::before {
+    content: '';
+    position: absolute;
+    top: 11px;
+    right: 7px;
+    width: 10%;
+    height: 56%;
+    border-radius: 50%;
+    background: #403f3fc2;
+    cursor: pointer;
+    transition-timing-function: cubic-bezier(0.32, 0.94, 0.6, 1);
+    display: none;
+}
+
+.password-field.show-hover::before {
+    content: '';
+    display: block;
+}
+
+.show-eye {
+    display: inline;
+}
+
+.second-container .form-control .signIn-btn {
+    padding: 0.375rem 1rem;
+    border-radius: 5px;
+    background: rgb(229, 9, 20);
+    color: rgb(255, 255, 255);
+    font-family: unset;
+    font-size: 1rem;
+    font-weight: 500;
+    min-height: 2.5rem;
+    border: none;
+}
+
+.second-container .form-control .signIn-btn:hover {
+    background: rgb(193, 17, 25);
+
+}
+
+.second-container .form-control .signInCode-btn {
+    transition-timing-function: cubic-bezier(0.32, 0.94, 0.6, 1);
+    background: rgba(128, 128, 128, 0.4);
+}
+
+.second-container .form-control .signInCode-btn:hover {
+    transition-timing-function: cubic-bezier(0.32, 0.94, 0.6, 1);
+    background: rgba(128, 128, 128, 0.3);
+}
+
+.second-container .form-control p {
+
+    color: rgba(255, 255, 255, 0.7);
+    font-family: unset;
+    font-size: 1rem;
+    font-weight: 400;
+
+}
+
+.second-container .form-control .sec-p {
+    margin-bottom: 0;
+    color: #fff;
+    border-radius: 0.125rem;
+
+}
+
+.second-container .form-control .sec-p:hover {
+    color: rgba(255, 255, 255, 0.7);
+    cursor: pointer;
+}
+
+.second-container .form-control .remember-me .checkBox {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    margin-bottom: 16px;
+    color: rgb(255, 255, 255);
+    font-family: unset;
+    font-weight: 300;
+}
+
+.second-container .form-control .remember-me input[type="checkbox"] {
+    width: 17px;
+    height: 17px;
+    position: relative;
+    accent-color: #000;
+}
+
+.second-container .form-control .remember-me input[type="checkbox"]:checked {
+    accent-color: #fff;
+}
+
+/* .second-container .form-control .remember-me input[type="checkbox"]::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url(/Netflix/login_page/check.png);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+} */
+
+.second-container .form-control .remember-me p span a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+
+}
+
+.second-container .form-control .remember-me small {
+    margin-block: 0px;
+    margin: 0px;
+    padding: 0px;
+    color: rgba(255, 255, 255, 0.5);
+    font-family: unset;
+    font-size: 0.8125rem;
+    font-weight: 400;
+    text-align: start;
+    user-select: text;
+}
+
+.second-container .form-control .remember-me small p a {
+    margin-block: 0px;
+    margin: 0px;
+    padding: 0px;
+    color: rgb(68, 142, 244);
+    font-family: unset;
+    font-size: 0.8125rem;
+    font-weight: 400;
+    text-align: start;
+    user-select: text;
+    text-decoration: underline;
+}
+
+.second-container .form-control .remember-me small p a:hover {
+    cursor: pointer;
+}
+
+#footer {
+    padding: 5% 4% 5% 10%;
+    background-color: rgb(22, 22, 22);
+    color: rgba(255, 255, 255, 0.7);
+}
+
+#footer div p {
+    color: rgba(255, 255, 255, 0.7);
+    font-family: unset;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: start;
+    user-select: text;
+}
+
+#footer div a {
+    color: rgba(255, 255, 255, 0.7);
+    font-family: unset;
+    font-size: 14px;
+    font-weight: 100;
+    text-align: start;
+    user-select: text;
+}
+
+#footer select {
+    width: 10%;
+    padding: 5px;
+    background: none;
+    border-radius: 5px;
+    color: #fff;
+}
+
+@media only screen and (min-width:320px) and (max-width:480px) {
+    .main-container {
+        width: 100%;
+        background-color: #000;
+        background-image: none;
+    }
+
+    .first-container .navbar .navbar-brand {
+        width: 30%;
+        height: auto;
+        margin-left: 10px;
+        margin-top: 5px;
+    }
+
+    .second-container {
+        width: 100%;
+        padding: 20px;
+    }
+
+
+}
+
+@media only screen and (min-width:481px) and (max-width:720px) {
+    .first-container .navbar .navbar-brand {
+        margin-left: 0;
+    }
+}
+
+
+@media only screen and (min-width:721px) and (max-width:1080px) {
+    .first-container .navbar .navbar-brand {
+        margin-left: 0;
+        width: 9rem;
+    }
+}
+
+@media only screen and (min-width:1900px) and (max-width:2900px) {
+    .main-container {
+        background-size: cover;
+    }
+}

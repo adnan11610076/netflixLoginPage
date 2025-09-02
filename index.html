@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css">
+  <title>Netflix</title>
+  <link rel="icon" type="image/x-icon" href="./favicon_io/favicon.ico">
+</head>
+
+<body>
+  <div class="main-container">
+    <div class="first-container">
+      <nav class="navbar bg-body-tertiary" id="logo">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+
+            <img src="./Logonetflix.png" alt="Bootstrap" width="30" height="24">
+
+          </a>
+        </div>
+      </nav>
+    </div>
+    <div class="second-container">
+
+      <h2 class="pb-3">Sign In</h2>
+
+      <form action="#">
+
+        <div class="form-control">
+
+          <div class="email-field">
+            <input type="email" placeholder="Email or mobile number" id="email" name="email">
+            <small id="emailError" class="error"><img src="./iconswrong.png"> enter a valid email or
+              mobile number.</small>
+          </div>
+
+          <div class="password-field">
+            <input type="password" placeholder="Password" id="password" name="Password">
+            <span class="eyeIcon"><img src="./view.png"></span>
+            <span class="closeEye"><img src="./invisible.png"></span>
+            <small id="passwordError" class="error"><img src="./iconswrong.png"> Your password must
+              contain between 4 and 60 characters.</small>
+          </div>
+
+
+          <button class="signIn-btn">Sign In</button>
+
+          <p class="text-center mb-0">OR</p>
+
+          <button class="signIn-btn signInCode-btn">Use a sign-in code</button>
+
+          <p href="#" class="text-center text-decoration-underline sec-p">Forgot password?</p>
+
+
+          <div class="remember-me">
+
+            <div class="checkBox">
+              <input type="checkbox" id="checkBox" name="checkBox" checked>
+              <label for="checkBox">Remember me</label>
+            </div>
+
+            <p>New to Netflix?<span><a href="#">Sign up now.</a></span></p>
+
+            <small>This page is protected by Google reCAPTCHA to ensure you're not a bot.
+              <p><a>Learn more</a></p>
+            </small>
+
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+  <div id="footer">
+    <div class="container">
+      <footer class="footer">
+        <div class="row">
+          <p>Questions? Call 000-800-919-1743 (Toll-Free)</p>
+          <div class="col-md-3 col-sm-2 mb-3"><a href="#">FAQ</a></div>
+          <div class="col-md-3 col-sm-2 mb-3"><a href="#">Help Center</a></div>
+          <div class="col-md-3 col-sm-2 mb-3"><a href="#">Term of Use</a></div>
+          <div class="col-md-3 col-sm-2 mb-3"><a href="#">Privacy</a></div>
+        </div>
+        <div class="row">
+          <div class="col-md-3 col-sm-2 mb-3"><a href="#">Cookie Preferences</a></div>
+          <div class="col-md-3 col-sm-2 mb-3"><a href="#">Information</a> </div>
+        </div>
+        <div>
+          <select class="mt-2">
+            <option>English</option>
+            <option>Hindi</option>
+          </select>
+        </div>
+      </footer>
+    </div>
+  </div>
+  <script src="login.js"></script>
+</body>
+
+</html>
